@@ -1,0 +1,48 @@
+<html>
+<head><title>Tour Me - Your Newest Dublin Tour Guide!</title></head>
+<body>
+<!--references, image taken from: https://www.irishtimes.com/business/commercial-property/dublin-has-third-highest-residential-rents-in-europe-1.4037438-->
+<div> 
+<style>
+body {
+  background-image: url('dublin.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Gupter|Indie+Flower|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+</div>
+<div style="border: outset; color: white; width: 40%; height: 50%; margin:300px; padding: 10px; background: #ffffff; opacity: 0.6; color:currentColor;">
+<h1>
+<p style="text-align: center; color: black; font-family: 'Gupter', serif;
+font-family: 'Indie Flower', cursive; ">User Login</p>
+</h1>
+<form name="login">
+Username: &nbsp <input type="text" name="userid"/><br><br>
+Password:  &nbsp  <input type="password" name="paasword"/><br><br>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+</div>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+/*the following code checkes whether the entered userid and password are matching*/
+if(form.userid.value == "user1" && form.password.value == "pass1")
+{
+window.open('success.html')/*opens the target page while Id & password matches*/
+}
+else
+{
+alert("You've Logged in Successfully")/*displays error message*/
+}
+}
+</script>
+<footer>
+  <p style="text-align: center; color: #ffffff">All Rights Reserved &copy;CCT DevOps&#33;
+  </footer>
+</div>
+</body>
+</html>
